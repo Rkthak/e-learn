@@ -1,0 +1,44 @@
+@use "./Variables";
+
+.error{
+    background-color: Variables.$white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.error_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error_status h6 {
+    font-size: 80vh;
+}
+
+.error_para {
+    color: Variables.$white;
+    font-size: 2.85rem;
+    text-shadow: 0px 0px 5px Variables.$black;    
+}
+
+.error .main-btn {
+    margin-top: 0;
+    // background-color: Variables.$white !important;
+    // color: black;
+}
+
+@media (max-width : 768px) {
+    .error_status h6{
+            font-size: 20rem;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 900px) {
+    .error_status h6{
+        font-size: 30rem;
+}
+}

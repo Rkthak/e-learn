@@ -1,0 +1,22 @@
+@use "./mixin";
+@use "./Variables";
+
+.logo-link{
+    text-decoration: none;
+}
+
+.logo{
+    @include mixin.Ephesis;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.red{
+    color: Variables.$red;
+}
+
+.green{
+    color: Variables.$green;
+}

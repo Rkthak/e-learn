@@ -1,0 +1,89 @@
+@use "./Variables";
+@use "./mixin";
+
+header{
+    z-index: 99999;
+    position: sticky;
+    top: 0;
+}
+
+.head{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head, .footer {
+    border-radius: 0px;
+    background-color: Variables.$white;
+    box-shadow: -2px 2px 18px #d3d3d3,
+                inset 7px -7px 18px #ededed;
+}
+
+.fa-bars {
+    display: none;
+    font-size: 2rem;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-item{
+    list-style-type: none;
+    margin-inline: 1.85rem;
+}
+
+.nav-link{
+    @include mixin.Josefin;
+    @include mixin.anchor;
+    color: Variables.$red;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: color 0.2s;
+
+}
+
+.nav-link:hover {
+    color: Variables.$green;
+}
+
+.active {
+    color: #6200ff;
+}
+
+// footer
+.footer_para{
+    text-align: center;
+}
+
+@media (min-width : 200px) and (max-width : 900px){
+    .fa-bars {
+        display: block;
+    }
+
+    .open {
+        flex-direction: column;
+        position: absolute;
+        top: 10rem;
+        right: 0;
+        padding: 2rem 4rem;
+        background-color: Variables.$white;
+        height:90vh;
+        width: 100vw;
+    }
+
+    .close {
+        display: none;
+        width: 0px;
+    }
+
+    .nav-item {
+        margin-top: 1.85rem;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+    }
+}

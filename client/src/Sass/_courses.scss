@@ -1,0 +1,135 @@
+@use "./mixin";
+@use "./Variables";
+
+.course {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem 0;
+}
+
+.courses-head{
+    @include mixin.Josefin;
+    @include mixin.head;
+}
+
+.page-header h2 {
+    position: relative;
+    display: inline-block;
+    color: Variables.$red;
+    @include mixin.head;
+    font-size: 2.85rem;
+}
+.page-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: calc(100% + 1rem);
+    height: .1rem;
+    background-color: Variables.$green;
+}
+
+.card{
+    max-width: 23rem;
+    border: 2px solid Variables.$green;
+    border-radius: .75em;
+    transition: all .5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .card-img img {
+    width: 100%;
+    border-radius: .75em;
+}
+
+.card-contents {
+    padding: 1rem 1.5rem;
+}
+
+.card-contents h3 {
+    font-size: 1.85rem;
+    @include mixin.anchor;
+    color: Variables.$green;
+}
+.card-contents p {
+    font-size: 1.2rem;
+    @include mixin.Josefin;
+    color: Variables.$grey;
+    margin-top: .35rem;
+
+    &::first-letter{
+        text-transform: uppercase;
+    }
+}
+
+.card-btn {
+    width: 100%;
+    margin: 0.75rem 0 0 0;
+}
+
+.scques {
+    @include mixin.Josefin;
+    color: Variables.$grey;
+    font-size: 1.5rem;
+    margin-bottom: .2em;
+}
+
+.scans {
+    @include mixin.Josefin;
+    color: Variables.$grey;
+    font-size: 1.5rem;
+    line-height: 1.2em;
+}
+
+.scbakbtn{
+    @include mixin.Josefin;
+    color: Variables.$grey;
+    position: sticky;
+    top: 100px;
+    right: 5px;
+    float: right;
+    color: Variables.$black;
+    padding: .8em 1.2em;
+    transition: all .5s;
+    animation: bounce 2s ease 5s infinite alternate-reverse;
+
+    &:hover{
+        background-color: Variables.$green;
+        color: Variables.$white;
+    }
+}
+
+@keyframes bounce {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(2rem);
+    }
+}
+
+@media (max-width : 768px) {
+    .course {
+        grid-template-columns: 1fr;
+        padding: 2.5rem 0 !important;
+        place-items: center;
+    }
+    
+    .card {
+        min-width: 35rem;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 900px){
+    .course {
+        padding: 2.5rem 0 !important;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        min-width: 28rem;
+    }
+}

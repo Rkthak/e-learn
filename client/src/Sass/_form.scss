@@ -1,0 +1,171 @@
+@use "./mixin";
+@use "./Variables";
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 38rem;
+}
+
+.form-right-elem {
+    margin-top: 2rem;
+}
+
+.form-elem {
+    margin-top: 1.5rem;
+}
+
+.error_message {
+    font-size: 1.15rem;
+    @include mixin.Josefin;
+    color: Variables.$red;
+}
+
+.ip_pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fa-eye, .fa-eye-slash {
+    font-size: 1.45rem;
+    padding: .5em;
+    border-block: .15em solid Variables.$green;
+    border-right: .15em solid Variables.$green;
+}
+
+label {
+    display: block;
+    @include mixin.Josefin;
+    @include mixin.anchor;
+    font-size: 1.2rem;
+    margin-bottom: .5em;
+}
+
+input,textarea {
+    width: 100%;
+    @include mixin.Josefin;
+    padding: .8rem .5rem;
+    outline: none;
+    border: none;
+    border: .15em solid Variables.$green;
+    resize: none;
+}
+
+input[type = "password"] {
+    border-right: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    border: none;
+    border: .15em solid Variables.$red;
+}
+textarea:focus {
+    border: none;
+    border: .15em solid Variables.$red;
+}
+
+.form-left {
+    position: relative;
+    overflow: hidden;
+}
+
+.left-content {
+    z-index: 1;
+    padding: 2.5rem 4.25rem;
+
+    & h3 {
+        font-size: 2.7rem;
+        @include mixin.Josefin;
+        text-transform: capitalize;
+        color: Variables.$white;
+        margin-bottom: .5em;
+    }
+    
+    & p {
+        font-size: 1.8rem;
+        @include mixin.Josefin;
+        color: Variables.$white;
+        max-width: 50%;
+    }
+}
+
+.form-left-btn {
+    padding: .5em 1.5em;
+    background-color: Variables.$white;
+    font-size: 1.5rem;
+    border-radius: .5em;
+    color: Variables.$green;
+    @include mixin.Josefin;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-top: 3.5rem;
+}
+
+.form-elem a {
+    @include mixin.anchor;
+    font-size: 1.2rem;
+    color: Variables.$red;
+}
+
+
+.custom-shape-divider-top-1740659633 {
+    position: absolute;
+    top: 0;
+    left: -8rem;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(90deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1740659633 svg {
+    position: relative;
+    display: block;
+    width: calc(166.5% + 1rem);
+    height: 50rem;
+}
+
+.custom-shape-divider-top-1740659633 .shape-fill {
+    fill: #399918;
+}
+
+@media (min-width : 200px) and (max-width : 1024px){
+    .form{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .form-left {
+        background-color: #399918;
+        height: fit-content;
+    }
+
+    .form-right {
+        margin-top: 1.85rem;
+    }
+}
+
+// @media (min-width : 1200px) and (max-width : 1300px){
+    
+//     .custom-shape-divider-top-1740659633 svg{
+//         width: calc(176.5% + 1rem);
+//         height: 600px;
+//     }
+
+//     .left-content {
+//         padding: 1.5rem 2.25rem;
+
+//         & p {
+//             width: 60%;
+//         }
+//     }
+// }

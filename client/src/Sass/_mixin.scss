@@ -1,0 +1,46 @@
+@use "./Variables";
+
+@mixin Josefin {
+  font-family: Variables.$Josefin;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+@mixin Meow {
+    font-family: Variables.$Meow;
+    font-style: normal;
+}
+
+@mixin Marck {
+  font-family: Variables.$Marck;
+  font-style: normal;
+}
+
+@mixin Miss {
+  font-family: Variables.$Miss;
+  font-style: normal;
+}
+
+@mixin Ephesis {
+  font-family: Variables.$Ephesis;
+  font-style: normal;
+}
+
+@mixin Yantramanav {
+  font-family: Variables.$Yantramanav;
+  font-style: normal;
+}
+
+@mixin anchor {
+  text-decoration: none;
+  text-transform: capitalize;
+  @include Josefin;
+}
+
+@mixin head{
+  text-transform: capitalize;
+  font-weight: 500;
+  color: Variables.$red;
+  @include Josefin;
+}

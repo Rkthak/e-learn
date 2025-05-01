@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "cardName": "fullstack-development",
+    "Des": "learn about fullstack",
+    "about": "Full stack development is the process of building both the front-end and back-end of an application.",
+    "functions": [
+      {
+        "how": "how to become a fullstack developer",
+        "path": "HTML => CSS => JavaScript"
+      }
+    ],
+        "iframe" : "https://www.youtube.com/embed/voXYG17rhQA?si=IzNHRRe31j4H5i5f" 
+  },
+  {
+    "id": 2,
+    "cardName": "frontend-development",
+    "Des": "learn about frontend",
+    "about": "Front-end development is the process of creating a website's user interface. It involves using markup languages like HTML, CSS, and JavaScript to build the graphical user interface (GUI).",
+    "functions": [
+        {
+          "how": "how to become a frontend developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+      "iframe" : "https://www.youtube.com/embed/5ccq_nLHneE?si=4YZFWxODf_H2O8ow"
+  },
+  {
+    "id": 3,
+    "cardName": "backend-development",
+    "Des": "learn about backend",
+    "about": "A back-end developer works on the server-side of a website or mobile app, focusing on the code that users don't see. They ensure that the back-end runs smoothly and efficiently.",
+    "functions": [
+        {
+          "how": "how to become a backend developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+      "iframe" : "https://www.youtube.com/embed/GNG2PxEWRWk?si=TirQfI_ZxwTGoaXR" 
+  },
+  {
+    "id": 4,
+    "cardName": "html",
+    "Des": "learn about html",
+    "about": "HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.",
+    "functions": [
+        {
+          "how": "how to become a html developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+      "iframe" : "https://www.youtube.com/embed/5ccq_nLHneE?si=4YZFWxODf_H2O8ow"
+  },
+  {
+    "id": 5,
+    "cardName": "css",
+    "Des": "learn about css",
+    "about": "CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files (. css).",
+    "functions": [
+        {
+          "how": "how to become a css developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+      "iframe" : "https://www.youtube.com/embed/MSICFljRcb4?si=KBzCaCC-4b8hri0Z" 
+  },
+  {
+    "id": 6,
+    "cardName": "javascript",
+    "Des": "learn about javascript",
+    "about": "JavaScript is a programming language used to create interactive web pages, applications, and games. It's also used for mobile apps, backend services, and more.",
+    "functions": [
+        {
+          "how": "how to become a javascript developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+      "iframe" : "https://www.youtube.com/embed/13gLB6hDHR8?si=rLsUWiFc2WRVyjo_"
+  },
+  {
+    "id": 7,
+    "cardName": "react.js",
+    "Des": "learn about react.js",
+    "about": "React.js is a JavaScript library used to create user interfaces (UIs) for web and mobile applications. It's known for being flexible, efficient, and open-source.",
+    "functions": [
+        {
+          "how": "how to become a react.js developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+      "iframe" : "https://www.youtube.com/embed/EHTWMpD6S_0?si=H2VcZI3A7gMLcYDJ"
+  },
+  {
+    "id": 8,
+    "cardName": "node.js",
+    "Des": "learn about node",
+    "about": "Node.js is a JavaScript runtime environment used to build applications like web servers, APIs, and real-time applications. It's also used to create command-line tools and scripts.",
+    "functions": [
+        {
+          "how": "how to become a node developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+      "iframe" : "https://www.youtube.com/embed/ipnWAKoiBtY?si=au7o4fBEDfrh1Xns" 
+  },
+  {
+    "id": 9,
+    "cardName": "express.js",
+    "Des": "learn about node",
+    "about": " Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a single page, multipage, and hybrid web application. It's a layer built on the top of the Node js that helps manage servers and routes.",
+    "functions": [
+        {
+          "how": "how to become a express developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+      "iframe" : "https://www.youtube.com/embed/AX1AP83CuK4?si=uSmCpoGcIB6bAhPm"
+  },
+  {
+    "id": 10,
+    "cardName": "mongodb",
+    "Des": "learn about mongodb",
+    "about": "MongoDB is an open-source database used to store and manage large amounts of data. It's often used to build applications that need to be scalable and handle big data.",
+    "functions": [
+        {
+          "how": "how to become a mongodb developer",
+          "path": "HTML => CSS => JavaScript"
+        }
+      ],
+    "iframe" : "https://www.youtube.com/embed/rU9ZODw5yvU?si=QYNOrF6bYmFsVKE_"
+  }
+]
