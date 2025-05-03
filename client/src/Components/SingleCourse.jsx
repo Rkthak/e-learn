@@ -47,8 +47,9 @@ useEffect(()=>{
       <div className="container">
         <h3 className="scques">What is {data.cardName} ?</h3>
         <p className="scans"> {data.about} </p>
-        <p>{data.functions?.[0].how}</p>
-        <p>{data.functions?.[0].path}</p>
+        <h3 className="scques">{data.functions?.[0].how}?</h3>
+        <p className="scans">{data.functions?.[0].path}</p>
+        <h3 className="scques">view tutorial . . . </h3>
         <iframe src={data.iframe} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen aria-hidden="true"></iframe>
       </div>
     </>
