@@ -4,7 +4,7 @@ import { Apic } from "../store/GetApi";
 
 export default function Home() {
 
-  const {data} = useContext(Apic);
+  const {data,isLoggedIn} = useContext(Apic);
 
   const [apiData, setApiData] = useState([]);
   
@@ -55,9 +55,9 @@ export default function Home() {
             <NavLink to="/courses" className="nav-link main-link"> and more ... </NavLink>
           </div>
 
-         <NavLink to="/signup">
+{isLoggedIn &&   <NavLink to="/signup">
             <button className="btn main-btn" > join Now </button>
-         </NavLink>
+         </NavLink>}
           </div>
 
           <div className="main-img">
