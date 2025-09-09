@@ -68,8 +68,10 @@ export const ApiProvider = ( {children} ) => {
     },[])
 
     useEffect(()=>{
-        userAuthorization();
-    })
+        if(token){
+            userAuthorization()
+        }
+    },[token])
 
     return <Apic.Provider value={{data, storeTokenInLocalStorage, isLoggedIn, LogOutFunction, user}}>
         {children}
